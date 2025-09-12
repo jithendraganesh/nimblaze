@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Zap, Shield, Rocket, Users, Star, Quote } from "lucide-react"
+import { ArrowRight, Star, Quote, Brain, Zap, BarChart3 } from "lucide-react"
 import Link from "next/link"
 import { ChatWidget } from "@/components/chat-widget"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
@@ -12,8 +13,14 @@ export default function HomePage() {
       <nav className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <Zap className="h-8 w-8 text-primary" />
+            <div className="flex items-center space-x-3">
+              <Image
+                src="/images/nimblaze-logo.png"
+                alt="Nimblaze Logo"
+                width={40}
+                height={40}
+                className="rounded-lg"
+              />
               <span className="text-2xl font-bold text-foreground">Nimblaze</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -43,18 +50,18 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-6">
-              🚀 Innovation at the Speed of Light
+              🤖 AI-Powered Innovation
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance">
-              Empowering Businesses with <span className="text-primary">Cutting-Edge</span> Technology
+              Smart Software Solutions with <span className="text-primary">Machine Learning</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty max-w-3xl mx-auto">
-              Transform your business with Nimblaze's innovative solutions. We deliver lightning-fast results that
-              propel your company into the future.
+              Our mission is to create smart software solutions that use machine learning to help businesses make better
+              decisions, automate tasks, and discover new opportunities for growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="text-lg px-8 py-6">
@@ -75,40 +82,44 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose Nimblaze?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We combine innovation, reliability, and speed to deliver exceptional results for businesses of all sizes.
+              We're always striving to be innovative in our approach to software development, pushing the limits of
+              what's possible with machine learning to drive positive change.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="border-border hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Rocket className="h-6 w-6 text-primary" />
+                  <Brain className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Lightning Fast</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">AI-Powered Decisions</h3>
                 <p className="text-muted-foreground">
-                  Deploy solutions in record time with our streamlined processes and cutting-edge technology stack.
+                  Leverage machine learning algorithms to make smarter business decisions with data-driven insights and
+                  predictive analytics.
                 </p>
               </CardContent>
             </Card>
             <Card className="border-border hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="h-6 w-6 text-primary" />
+                  <Zap className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Enterprise Security</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Intelligent Automation</h3>
                 <p className="text-muted-foreground">
-                  Bank-level security protocols ensure your data and operations remain protected at all times.
+                  Automate complex tasks and workflows using advanced ML models that learn and adapt to your business
+                  processes.
                 </p>
               </CardContent>
             </Card>
             <Card className="border-border hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="h-6 w-6 text-primary" />
+                  <BarChart3 className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Expert Support</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Growth Opportunities</h3>
                 <p className="text-muted-foreground">
-                  24/7 dedicated support from our team of experts ensures you're never left behind.
+                  Discover hidden patterns and new opportunities for growth through sophisticated data analysis and
+                  machine learning insights.
                 </p>
               </CardContent>
             </Card>
@@ -329,11 +340,19 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <Zap className="h-6 w-6 text-primary" />
+              <div className="flex items-center space-x-3 mb-4">
+                <Image
+                  src="/images/nimblaze-logo.png"
+                  alt="Nimblaze Logo"
+                  width={32}
+                  height={32}
+                  className="rounded-lg"
+                />
                 <span className="text-xl font-bold text-foreground">Nimblaze</span>
               </div>
-              <p className="text-muted-foreground">Empowering businesses with cutting-edge technology solutions.</p>
+              <p className="text-muted-foreground">
+                Creating smart software solutions with machine learning to drive business growth and innovation.
+              </p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-4">Product</h4>
