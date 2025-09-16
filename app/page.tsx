@@ -60,7 +60,7 @@ export default function HomePage() {
               Smart Software Solutions with <span className="text-primary">Machine Learning</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty max-w-3xl mx-auto">
-              Our mission is to create smart software solutions that use machine learning to help businesses make better
+              Our best mission is to create smart software solutions that use machine learning to help businesses make better
               decisions, automate tasks, and discover new opportunities for growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
