@@ -42,7 +42,7 @@ export default function HomePage() {
               <Button variant="outline" size="sm">
                 Sign In
               </Button>
-              <Button size="sm">Get Started</Button>
+              <Button size="sm">Get Start</Button>
             </div>
           </div>
         </div>
