@@ -46,7 +46,7 @@ export default function ServicesPage() {
               <Button variant="outline" size="sm">
                 Sign In
               </Button>
-              <Button size="sm">Get Started</Button>
+              <Button size="sm">Get Start</Button>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function ServicesPage() {
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty max-w-3xl mx-auto">
               From cloud infrastructure to AI-powered analytics, we provide the complete technology stack your business
-              needs to thrive in the digital age.
+              needs to thrive in the modern era.
             </p>
           </div>
         </div>
