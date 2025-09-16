@@ -49,7 +49,7 @@ export default function ContactPage() {
               Get In Touch
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">
-              Let's Build Something <span className="text-primary">Amazing</span> Together
+              Sunainha <span className="text-primary">Amazing</span> Together
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty max-w-3xl mx-auto">
               Ready to transform your business? Our team of experts is here to help you navigate your digital
